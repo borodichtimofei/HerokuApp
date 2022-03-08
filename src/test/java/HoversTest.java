@@ -1,19 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
-import java.awt.*;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class HoversTest extends BaseTest{
+public class HoversTest extends BaseTest {
 
     @Test
-    public void hover (){
+    public void hover() {
         driver.get("http://the-internet.herokuapp.com/hovers");
         Actions action = new Actions(driver);
         WebElement element = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[1]/img"));
