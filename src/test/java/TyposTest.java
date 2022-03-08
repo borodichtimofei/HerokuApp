@@ -14,7 +14,7 @@ public class TyposTest extends BaseTest {
         driver.navigate().refresh();
         WebElement elementSecond = driver.findElements(By.tagName("p")).get(1);
         String stringAfterRefresh = elementSecond.getText();
-        Assert.assertEquals(stringAfterRefresh, "Sometimes you'll see a typo, other times you won,t.", "string not correct");
+        Assert.assertEquals(stringAfterRefresh, "Sometimes you'll see a typo, other times you won't.", "string not correct");
 
     }
 }
